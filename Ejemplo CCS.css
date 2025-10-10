@@ -1,0 +1,10 @@
+h1 {
+    color:red;
+    background-color: rgb(0, 204, 255);
+    text-align: center;
+}
+p{
+    color:blue;
+    text-align: left;
+    background-color: blanchedalmond;
+}
