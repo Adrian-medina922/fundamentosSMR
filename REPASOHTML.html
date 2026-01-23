@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Repasocss.css">
+    <script src="repaso.js"></script>
     <title>Repaso</title>
 </head>
 <body>
@@ -19,9 +20,16 @@
         </nav>
     </header>
     <main>
+        <!--Método 1, no reconmendable-->
+        <!-- <p><a href="javascript:saludo()">Saludar</a></p> -->
+        <!-- Método 2, No reconmendable pero de momento si  -->
+        <p onclick="saludo()"id="boton">Saludar</p>
+       <p id="texto"></p>
+        
         <section>
             <h2>Deportes</h2>
             <article><h3>Real madrid - Atleti (2-1)</article></h3>
+            <img src="descarga.jfif" alt="">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quas recusandae. Facere officiis facilis ea fugit eum voluptatibus omnis debitis enim saepe, ducimus asperiores, porro optio culpa id ex at.</p>
             <article><h3>El balón de oro para valentin</article></h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error commodi, nihil ex maxime corrupti ab labore mollitia facilis officiis veritatis eius atque facere magni vitae illo odit asperiores iure id.</p>
