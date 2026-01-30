@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        input, textarea{
+            display: block;
+        }
+        input[type="submit"], input[type="reset"]{
+            background-color: brown;
+            color: aliceblue;
+            display: inline;
+        }
+
+        
+            
+        
+    </style>
+</head>
+<body>
+    <form action="#" method="get">
+    <label for="nombre">Nombre:</label>
+     <input type="text" name="nombre" id="nombre" required placeholder="Escribe tu nombre">
+
+     <label for="apellido">Apellido:</label>
+      <input type="text" name="apellido" id="apellido" required> 
+
+      <label for="color"> color preferido</label>
+      <input type="color" name="color" id="color" required>
+
+      <label for="nacimiento">Fecha de nacimiento</label>
+      <input type="date" name="nacimiento" id="nacimiento" required>
+
+      <label for="numero">Cuanto quieres ganar(de 1000 a  3000)</label>
+      <input type="range" name="numero" id="numero" min="1000" max="3000" step="100" required>
+
+      <label for="email">email</label>
+      <input type="email"name="email" id="email" required>
+
+      <label for="contrasena">contrasena</label>
+      <input type="password" name="contrasena" id="contrasena" required>
+
+      <label for="comentarios">Comentarios</label>
+      <textarea name="comentarios" id="comentarios"cols="40" rows="5"></textarea>
+
+      <input type="submit" value="Registrar">
+      <input type="reset" value="Borrar">
+
+     </form>
+</body>
+</html>
