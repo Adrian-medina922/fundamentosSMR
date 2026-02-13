@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        input, textarea, select{
+            display: block;
+        }
+        input[type="submit"], input[type="reset"]{
+            background-color: brown;
+            color: aliceblue;
+            display: inline;
+        }
+        .enlinea{
+            display: inline;
+        }
+        fieldset{
+            border-color: brown;
+        }
+        legend{
+            color: brown;
+        }
+        .centrado{
+            text-align: center;
+        }
+        footer{
+            background-color: red;
+            color:aliceblue
+        }
+        li{
+            display: inline-block;
+            width: 30%;
+            background-color: blue;
+            text-align: center;
+            color: aliceblue;
+        }
+        a{
+            color: aliceblue;
+        }
+
+        
+            
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulario de contacto</h1>
+        <nav>
+            <ol>
+                <li><a href="#Datos">Datos personales</a></li>
+                <li><a href="#Aficiones">Aficiones</a></li>
+                <li><a href="Otros datos">Otros datos</a></li>
+            </ol>
+        </nav>
+    </header>
+    <form action="#" method="get">
+        <fieldset id="Datos"> 
+            <LEGEnd>Datos personales </LEGEnd>
+    <label for="nombre">Nombre:</label>
+     <input type="text" name="nombre" id="nombre" required placeholder="Escribe tu nombre">
+
+     <label for="apellido">Apellido:</label>
+      <input type="text" name="apellido" id="apellido" required placeholder="Escribe tu apellido"> 
+      </fieldset>
+      
+      
+    <fieldset id="Color">
+        <legend>color preferido</legend>
+      <label for="color"> </label>
+      <input type="color" name="color" id="color" required>
+      
+
+      <label for="Equipo">¿cuales son tus equipos favoritos?</label>
+      <select name="Equipo" id="Equipo" size="3" multiple>
+        <option value="01">Atletico de madrid</option>
+        <option value="02">Manchester</option>
+        <option value="03">Real madrid</option>
+        <option value="04">Barsa</option>
+        </fieldset>
+        
+      </select>
+     
+
+        <fieldset id="Sexo"> 
+            <legend>Sexo</legend>
+            <input type="radio" name="Sexo" class="enlinea" value="Hombre" >
+      <label for="Hombre" class="enlinea">Hombre</label>
+
+            <input type="radio" name="Sexo" class="enlinea" value="Mujer" id="Mujer">
+      <label for="Mujer" class="enlinea">Mujer</label>
+
+      <input type="radio" name="Sexo" class="enlinea" value="Otro" id="Otro">
+      <label for="Otro" class="enlinea">Otro</label>
+
+
+
+        </fieldset>
+        <fieldset id="aficiones">
+        <legend>¿cuales son tus aficiones?</legend>
+      
+      <input type="checkbox" name="futbol" class="enlinea" id="futbol">
+      <label for="futbol" class="enlinea">futbol</label>
+
+      
+      <input type="checkbox" name="musica" class="enlinea" id="muscia">
+      <label for="musica" class="enlinea">musica</label>
+
+     
+      <input type="checkbox" name="Cine" class="enlinea" id="Cine">
+       <label for="Cine" class="enlinea">Cine</label>
+       </fieldset>
+       
+      
+
+
+
+      
+        <fieldset><legend>Fecha de nacimiento</legend>
+            
+      <label for="nacimiento"></label>
+      <input type="date" name="nacimiento" id="nacimiento" required>
+    
+
+      <label for="numero">Cuanto quieres ganar(de 1000 a  3000)</label>
+      <input type="range" name="numero" id="numero" min="1000" max="3000" step="100" required>
+
+      <label for="email">email</label>
+      <input type="email"name="email" id="email" required>
+
+      <label for="contrasena">contrasena</label>
+      <input type="password" name="contrasena" id="contrasena" required>
+
+      <label for="comentarios">Comentarios</label>
+      <textarea name="comentarios" id="comentarios"cols="40" rows="5"></textarea>
+      
+      </fieldset>
+    
+      
+       
+      <fieldset class="centrado">
+      <input type="submit" value="Registrar">
+      <input type="reset" value="Borrar">
+      </fieldset>
+      <footer>&copy; 2026 Adrian Medina</footer>
+      
+
+     </form>
+</body>
+</html>
