@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso examen</title>
+    <link rel="stylesheet" href="repaso_examen.css">
+    <script src="reapaso-examen.js"></script>
+
+</head>
+<body>
+    <form action="#" method="get" enctype="multipart/form-data" onsubmit="return mostrar()"> 
+        <label for="nombre">Nombre</label>
+        <input type="text " id="nombre" name="nombre">
+
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido"
+        placeholder="Escribe tu apellido">
+        <label for="contrasena">Contrasena</label>
+        <input type="password" name="contrasena">
+       
+        <label for="comentario">Comentario</label>
+        <textarea name="comentario" id="comentario"></textarea>
+        <label for="aficiones">Aficiones</label>
+        <select name="aficiones" id="aficiones" size="2" multiple>
+            <option value="pr1">Música</option>
+            <option value="pr2">Deportes</option>
+            <option value="pr3">Videojuegos</option>
+
+        </select>
+         <input type="submit"
+        value="Registrar">
+        <input type="reset">
+        <!-- <button onclick="mostrar()">Ejecutar</button> -->
+        
+
+    </form>
+    <div id="resultado"></div>
+</body>
+</html>
